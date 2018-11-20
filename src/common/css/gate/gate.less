@@ -1,0 +1,531 @@
+// 门票的立即支付,和其他支付类似,可共用
+.common-payment {
+    .payment-tips {
+        padding: .25rem .1rem 0rem .1rem;
+        background: #ffffff;
+        .payment-tips-name {
+            padding: .15rem .1rem;
+            font-size: .34rem;
+        }
+        .payment-tips-num {
+            padding: .05rem .1rem;
+            color: #999999;
+        }
+        .payment-tips-time {
+            padding: .05rem .1rem .15rem;
+            border-bottom: 1px solid #4c4c4c;
+            font-size: .35rem;
+        }
+        .payment-tips-money {
+            padding: .2rem .1rem .2rem;
+            border-bottom: 3px dashed #f3b712;
+            .payment-tips-money-title {
+                font-size: .36rem;
+                font-weight: 600;
+            }
+            .payment-tips-money-price {
+                color: #f3b712;
+                font-size: .4rem;
+            }
+        }
+        .payment-tips-lineBox{
+            color:#666666;
+            padding: .05rem .1rem .15rem;
+            border-bottom: 1px dashed  #6c6c6c;
+            margin-bottom: .05rem;
+        }
+        // 附加费
+        .extra{
+            margin-top: .15rem;
+            padding: .05rem .1rem .15rem;
+            .extra-header{
+                font-size: .34rem;
+            }
+            .extra-con{
+                margin: .1rem 0;
+                .extra-info{
+                    font-size: .3rem;
+                }
+                .extra-money{
+                    color: #f3b712;
+                    font-size: .32rem;
+                }
+            }
+        }
+    }
+    .payment-choice {
+        padding: .15rem .1rem .15rem .1rem;
+        margin-top: .3rem;
+        background: #ffffff;
+        .payment-choice-title {
+            padding: .25rem .2rem .3rem .2rem;
+            border-bottom: 1px solid #e6e6e6;
+            font-size: .4rem;
+            i {
+                font-size: .5rem;
+                color: #252d83;
+            }
+        }
+        .payment-choice-list {
+            padding: .4rem .3rem .4rem .3rem;
+            border-bottom: 1px dashed #e6e6e6;
+            .payment-choice-list-png {
+                width: 1.12rem;
+                margin-right: .15rem;
+                text-align: center;
+                img {
+                    width: .5rem;
+                    height: 100%;
+                }
+            }
+            .payment-choice-list-type {
+                font-size: .34rem;
+                width: 5.56rem;
+            }
+            .payment-choice-list-icon {
+                i {
+                    font-size: .58rem;
+                    color: #cccccc;
+                }
+            }
+        }
+    }
+    .payment-btn{
+        background: #262f81;
+        color: #ffffff;
+        padding: .3rem 0;
+        font-size: .34rem;
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+//门票列表
+.gate{
+    .gate-img{
+        img{
+            width: 100%;
+            height: 3rem;
+        }
+    }
+    .gate-box{
+        margin-top: .3rem;
+        background: #ffffff;
+        .gate-list{
+            margin-bottom: .35rem;
+            .gate-item{
+                padding: .24rem .05rem .24rem .1rem;
+                .gate-item-img{
+                    margin-right: .18rem;
+                    img{
+                        width: 2.4rem;
+                        height: 1.7rem;
+                    }
+                }
+                .gate-item-con{
+                    .gate-item-con-title{
+                        height: .8rem;
+                        line-height: .4rem;
+                    }
+                    .gate-item-con-time{
+                        color:#989898;
+                        font-size: .3rem;
+                    }
+                    .gate-item-span{
+                        font-size: .26rem;
+                        color:#2bc6f2;
+                        padding: .02rem .15rem;
+                        margin: .02rem .1rem .02rem 0;
+                        border-radius: .25rem;
+                        display: inline-block;
+                        border: 1px solid #2bc6f2;
+                    }
+                    .gate-item-price{
+                        text-align: right;
+                        font-size: .24rem;
+                        span{
+                            font-size: .36rem;
+                            color:#f3b913;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 门票详情
+.gate{
+    .gate-detail-swipe{
+        position: relative;
+        .xc-img{
+            width: 100%;
+            height: 3.9rem;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .gate-detail-swipe-pos{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, .4);
+            div{
+                margin: 0 .15rem;
+                color: #ffffff;
+                padding: .1rem 0;
+                i{
+                    font-size: .4rem;
+                    vertical-align: center;
+                }
+            }
+        }
+    }
+    .gate-xs{
+        background: #FFFFFF;
+        .gate-xs-name{
+            margin: 0 0 0 .25rem;
+            padding: .15rem 0;
+        }
+        .gate-xs-time{
+            padding: .15rem 0;
+            border-top:1px solid #efeded; 
+            // height: .4rem;
+            line-height: .4rem;
+            .gate-xs-time-left{
+                margin: 0 .25rem;
+            }
+            .xs-price{
+                font-size: .28rem;
+                span{
+                    color:#da3244;
+                    font-size: .4rem;
+                    margin-right: .05rem;
+                    font-weight: 600;
+                }
+            }
+        }
+        .gate-xs-address{
+            border-top:1px solid #efeded; 
+            padding: .15rem 0;
+            .gate-xs-time-left{
+                margin: 0 .25rem;
+            }
+        }
+    }
+
+    .xs-date-box{
+        margin: .3rem 0 .3rem;
+        background: #ffffff;
+        padding: .15rem;
+        .xs-date{
+            width: 1.7rem;
+            font-size: .3rem;
+            text-align: center;
+            border: 1px solid #c8c8c8;
+            border-radius: .15rem;
+            color: #9a9a9a;
+            padding: .02rem 0;
+            p{
+                span{
+                    font-size: .28rem;
+                }
+            }
+        }
+        .xs-date{
+            border: 1px solid #252d83;
+            color: #252d83;
+        }
+        .xs-date-active{
+            border: 1px solid #252d83;
+        }
+    }
+    .gate-ticket-box{
+        margin-top: .3rem;
+        background: #fbfafa;
+        .gate-ticket-list{
+            .list-title{
+                background: #ffffff;
+                padding: .18rem;
+                border-bottom: 1px solid #cbcbcb;
+                .list-title-type{
+                    font-size: .35rem;
+                    color: #f3b712;
+                   i{
+                       font-size: .65rem;
+                       vertical-align: middle;
+                       display: inline-block;
+                       margin-top: -.05rem;
+                   }
+                }
+                .list-title-down {
+                    i{
+                        display: inline-block;
+                        font-size: .56rem;
+                    }
+                }
+            }
+            .gate-type{
+                width: 95%;
+                margin: 0 auto;
+                border-bottom: 1px solid #cbcbcb;
+                padding: .15rem 0;
+                .gate-type-name{
+                    padding: .1rem 0;
+                    font-weight: 600;
+                }
+                .gate-type-left{
+                    width: 3.5rem;
+                    .gate-type-span{
+                        color:#999999;
+                        margin: .12rem 0;
+                        height: .4rem;
+                        line-height: .4rem;
+                        i{
+                            color: #252d83;
+                            font-size: .32rem;
+                            font-weight: 600;
+                        }
+                    }
+                    .gate-type-tips{
+                       color: #333333;
+                    }
+                }
+                .gate-type-price{
+                    margin-right: .2rem;
+                    text-align: center;
+                    .gate-type-price-true{
+                        color: #f3b712;
+                        font-size: .4rem;
+                    }
+                    .gate-type-py{
+                        font-size: .3rem;
+                        color: #484848;
+                    }
+                }
+                .gate-type-btn{
+                    width: 1.2rem;
+                    text-align: center;
+                    border-radius: .2rem;
+                    .gate-type-btn-up{
+                        background: #252d83;
+                        color: #ffffff;
+                        padding: .05rem 0;
+                    }
+                    .gate-type-btn-down{
+                        background: #ffffff;
+                        color: #252d83;
+                        padding: .05rem 0;
+                    }
+                }
+            }
+        }
+    }
+    .gate-con{
+        margin-top: .3rem;
+        background: #ffffff;
+        .gate-con-ul{
+            border-bottom:1px  solid #e5e5e5;
+            width: 100%;
+            li{
+                width: 50%;
+                float: left;
+                text-align: center;
+                padding: .18rem 0;
+            }
+            .active-li{
+                border-bottom: 1px solid #262f81;
+                color: #262f81;
+            }
+        }
+        .gate-con-ul-four{
+            border-bottom:1px  solid #e5e5e5;
+            width: 100%;
+            li{
+                width: 25%;
+                float: left;
+                text-align: center;
+                padding: .18rem 0;
+            }
+            .active-li{
+                border-bottom: 2px solid #262f81;
+                color: #262f81;
+            }  
+        }
+        .gate-con-about{
+            padding: .3rem .1rem .2rem .15rem;
+            .gate-con-about-title{
+                font-size: .34rem;
+                color: black;
+                i{
+                    color: #f3b712;
+                    font-size: .4rem;
+                }
+            }
+            .jt{
+                padding: .15rem 0;
+                border-top: 1px solid #e5e5e5;
+            }
+            .gate-con-about-box{
+                margin:.2rem 0 .15rem; 
+                line-height: .45rem;
+                font-size: .3rem;
+                border-bottom: 1px solid #e5e5e5;
+                color: #333333;
+                img{
+                    width: 98% !important;
+                    margin: .15rem auto !important;
+                    height: auto !important;
+                }
+            }
+        }
+    }
+
+    // 行程天数
+    .xs-day-box{
+        padding: .3rem .1rem .2rem .15rem;
+        margin: .3rem 0;
+        background: #ffffff;
+        .xs-day-list{
+            .xs-day-list-title{
+                padding: .15rem 0 0;
+                .xs-day-icon{
+                    color: #f3b712;
+                    i{
+                        font-size: .4rem;
+                        margin-right: .2rem;
+                    }
+                }
+            }
+            .xs-day-con{
+                .xs-day-con-title{
+                    margin-top: .15rem;
+                    padding: .12rem 0 .15rem;
+                    border-top:1px solid #e0e0e0; 
+                    // color: #252d83;
+                    font-size: .34rem;
+                }
+                .xs-day-text{
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    // 费用说明
+    .xs-feiyong,.xs-order{
+        background: #ffffff;
+        margin: .3rem 0;
+        padding: .3rem .1rem .2rem .15rem;
+        overflow: hidden;
+        .xs-feiyong-title{
+            font-size: .34rem;
+            color: black;
+            margin-bottom: .12rem;
+            i{
+                color: #f3b712;
+                margin-right: .2rem;
+                font-size: .4rem;
+            }
+        }
+        p{
+            letter-spacing: .02rem;
+            color: #333333;
+        }
+    }
+
+    .gate-con-talk{
+        margin-bottom: .35rem;
+        .gate-con-talk-title{
+            margin-top:.25rem; 
+            background: #e9ebf2;
+            padding: .2rem .15rem .18rem;
+            color: #f3b712;
+        }
+        .gate-con-talk-list{
+            background: #ffffff;
+            padding-bottom: .25rem;
+            border-bottom: 1px solid #cdcdcd;
+            .list-up{
+                padding: .2rem .15rem .15rem .2rem;
+                .list-up-img{
+                    width: .8rem;
+                    height: .8rem;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: .15rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                .list-up-name{
+                    width: 3.8rem;
+                    .list-up-time{
+                        font-size: .3rem;
+                        color: #333333;
+                    }
+                }
+                .list-up-star{
+                    i{
+                        color: #f3b712;
+                    }
+                }
+            }
+            .list-about{
+                padding: 0 .05rem .15rem .18rem;
+            }
+            .list-img{
+                ul{
+                    li{
+                        width: 25%;
+                        float: left;
+                        text-align: center;
+                        img{
+                            width: 1.4rem;
+                            height: 1.15rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 行程详情固定底部样式
+.fixed-footer-order{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background: #ffffff;
+    z-index: 99;
+    height: 1.2rem;
+    div{
+        border-right: 1px solid #e0e0e0;
+        color: #f3b712;
+        width: 1.2rem;
+        text-align: center;
+        margin: .1rem 0;
+        i{
+            font-size: .4rem;
+            display: inline-block;
+        }
+    }
+    .now-btn{
+        background: #252d83;
+        color: #ffffff;
+        height: 100%;
+        line-height: 1.2rem;
+        font-size: .34rem;
+    }
+}

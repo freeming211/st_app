@@ -1,0 +1,83 @@
+.person {
+    .header {
+        width: 100%;
+        padding: .3rem 0;
+        position: relative;
+        text-align: center;
+        background: #ffffff;
+        margin-top: .15rem;
+        .middle-text {
+            font-size: .34rem;
+            span {
+                color: #f2b812;
+            }
+        }
+        .pos-ab {
+            position: absolute;
+            right: .25rem;
+            top: .15rem;
+            color: #f2b812;
+            i {
+                font-size: .4rem;
+            }
+            p {
+                font-size: .28rem;
+            }
+        }
+    }
+    .contant {
+        padding-bottom: 1.2rem;
+        .person-list {
+            width: 98%;
+            margin: .37rem auto;
+            background: #ffffff;
+            border-radius: .1rem;
+            border: 1px solid #999999;
+            .box {
+                padding: .25rem .2rem .25rem .15rem;
+                .name {
+                    font-size: .36rem;
+                    margin-bottom: .1rem;
+                }
+                .number {
+                    border-bottom: 1px dashed #666666;
+                    padding-bottom: .1rem;
+                    div {
+                        color: #333333;
+                    }
+                    .type {
+                        color: #282e75;
+                    }
+                }
+                .twoBtn {
+                    margin: .15rem 0 0;
+                    .delete {
+                        color: #333333;
+                        margin-left: .3rem;
+                    }
+                    .edit {
+                        color: #333333;
+                        i {
+                            font-size: .4rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+        .active{
+            border: 1px solid #282e75;
+        }
+    }
+    .fix-btn {
+        position: fixed;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        background: #282e75;
+        font-size: .34rem;
+        padding: .2rem 0;
+        bottom: 0;
+        left: 0;
+    }
+}

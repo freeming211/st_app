@@ -1,0 +1,153 @@
+/* 
+#calendar {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.1), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+} */
+
+.month {
+    width: 100%;
+    background: #00b8ec;
+  }
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .year-month {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .choose-active {
+    background: #16b3dc;
+    color: #ffffff;
+  }
+  
+  .choose-year {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .choose-month {
+    text-align: center;
+    font-size: 0.38rem;
+  }
+  
+  .arrow {
+    padding: .35rem .6rem;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 0.4rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .weekdays {
+    margin: 0;
+    padding: 0.2rem 0;
+    background-color: #00b8ec;
+    display: flex;
+    flex-wrap: wrap;
+    color: #ffffff;
+    justify-content: space-around;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+  }
+  
+  .days {
+    padding: 0;
+    background: #ffffff;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 300px;
+    .price{
+      text-align: center;
+      font-size: .28rem;
+      color: #ea9510;
+      padding-top: .05rem;
+    }
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 14.2%;
+    height: 0.6rem;
+    text-align: center;
+    padding-bottom: 0.4rem;
+    padding-top: 0.4rem;
+    font-size: 0.34rem;
+    color: #000;
+  }
+  
+  .days li .active {
+    padding: 0.2rem 0.2rem;
+    border-radius: 50%;
+    background: #00b8ec;
+    color: #fff;
+  }
+  
+  .days li .other-month {
+    padding: 5px;
+    color: gainsboro;
+  }
+
+  .person-num{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    background: #ffffff;
+    .p-li{
+      padding: 6px 10px  3px 12px;
+      border-bottom: 1px solid #b2b2b2;
+      .age{
+        color: #333333;
+        width: 2.6rem;
+        text-align: left;
+        font-size: 16px;
+      }
+    }
+    .plus-right{
+      width: 2.6rem;
+      .num{
+        width: 1rem;
+        text-align: center;
+        padding: 2px 0;
+        border: 1px solid #999999;
+        font-size: 18px;
+        color: black;
+        font-weight: 600;
+      }
+      .icon{
+        width: .8rem;
+        text-align: center;
+        i{
+          font-size: 24px;
+          color: #262f81;
+        }
+      }
+    }
+    .next{
+      background: #262f81;
+      color: #ffffff;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 18px;
+    }
+  }

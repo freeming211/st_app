@@ -1,0 +1,165 @@
+
+.service{
+    height:100%; 
+    .ser-title{
+        width: 7rem;
+        margin: .3rem auto;
+        font-size: .34rem;
+    }
+    ul{
+        background: #ffffff;
+        border-bottom: 1px dotted #e5e5e5;
+        li{
+            margin: .15rem 0;
+            width: 24.5%;
+            float: left;
+            text-align: center;
+            padding: .1rem 0;
+            font-size: .34rem;
+            border-left:1px solid  #e5e5e5;
+            .li-noborder{
+                border: none;
+            }
+        }
+    }
+    .ser-talkBox{
+        width: 7.15rem;
+        margin: .1rem auto 0;
+        .ser-left{
+            width: 5.9rem;
+            margin-bottom: .3rem;
+            .ser-img{
+                width:1rem;
+                height:1rem;
+                border-radius: 50%;
+               img{
+                   width: 100%;
+                   height: 100%;
+               }
+            }
+            .ser-text{
+                width: 4.7rem;
+                position: relative;
+                .ser-text-time{
+                    margin: .05rem 0 .05rem .1rem;
+                    color: #666666;
+                }
+                .ser-text-box{
+                    background: #ffffff;
+                    border-radius: .1rem;
+                    padding: .15rem .05rem .15rem .1rem;
+                    font-size: .34rem;
+                    word-wrap:break-word;
+                    float: left;
+                    min-width: .1rem;
+                    max-width: 4.7rem;
+                }
+            }
+        }
+        .ser-right{
+            width: 5.9rem;
+            margin-bottom: .3rem;
+            .ser-img{
+                width:1rem;
+                height:1rem;
+                border-radius: 50%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            .ser-text{
+                width: 4.7rem;
+                position: relative;
+                .ser-text-time{
+                    margin: .05rem 0;
+                    color: #666666;
+                }
+                .right-time{
+                    text-align: right;
+                    margin-right: .1rem;
+                }
+                .ser-text-box{
+                    background: #ffffff;
+                    border-radius: .1rem;
+                    padding: .15rem .05rem .15rem .1rem;
+                    font-size: .34rem;
+                    word-wrap:break-word;
+                    float: right;
+                    min-width: .1rem;
+                    max-width: 4.7rem;
+                }
+
+            }
+        }
+    }
+
+    .triangle-left {
+        width: 0;
+        height: 0;
+        border-top: .12rem solid transparent;
+        border-right: .24rem solid #ffffff;
+        border-bottom: .12rem solid transparent;
+        position: absolute;
+        top:.65rem;
+        left: -.22rem;
+    }
+
+    .triangle-right {
+        width: 0;
+        height: 0;
+        border-top: .12rem solid transparent;
+        border-left: .24rem solid #ffffff;
+        border-bottom: .12rem solid transparent;
+        position: absolute;
+        top:.65rem;
+        right: -.22rem;
+    }
+
+    .ser-footer{
+        position: fixed;
+        width: 100%;
+        background: #ffffff;
+        bottom: 0;
+        left:0;
+        z-index: 99;
+        .ser-footer-icon{
+            padding: .15rem .2rem;
+            line-height: .6rem;
+            vertical-align: middle;
+            i{
+                font-size: .5rem;
+                display: inline-block;
+                margin-right: .25rem;
+                vertical-align: middle;
+            }
+        }
+        .ser-footer-send{
+            padding: .15rem .2rem;
+            .ser-footer-send-ipt{
+                width: 5.3rem;
+                height: .65rem;
+                background: #f5f5f5;
+                input{
+                    border: none;
+                    outline: none;
+                    width: 90%;
+                    height: 100%;
+                    padding-left: .1rem;
+                    background: #f5f5f5;
+                    font-size: .34rem;
+                }
+            }
+            .ser-footer-send-btn{
+                width: 1.6rem;
+                height: .65rem;
+                text-align: center;
+                line-height: .65rem;
+                background: #262f81;
+                color: #ffffff;
+                font-size: .34rem;
+                border-radius: .1rem;
+            }
+        }
+    }
+}

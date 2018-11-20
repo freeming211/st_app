@@ -1,0 +1,501 @@
+.order {
+    .order-header {
+        ul {
+            background: #ffffff;
+            li {
+                float: left;
+                width: 33.3%;
+                text-align: center;
+                height: 1rem;
+                line-height: 1rem;
+                font-size: .32rem;
+                color: #666666;
+            }
+            .order-active {
+                border-bottom: 3px solid #262f81;
+                color: #262f81;
+            }
+        }
+    }
+    .order-box {
+        padding: 0 0.05rem;
+        .order-list {
+            background: #ffffff;
+            margin: 0.3rem 0;
+            border-radius: 0.1rem;
+            padding: 0.25rem 0.15rem 0.23rem 0.2rem;
+            border-top: 0.05rem dashed #f3b712;
+            .order-list-one {
+                .order-list-num {
+                    color: #666666;
+                    width: 5.5rem;
+                }
+                .ticket-list-type {
+                    color: #f3b712;
+                }
+            }
+            .order-line-name {
+                font-size: .36rem;
+                margin: .1rem 0;
+            }
+            .order-line-time {
+                color: #666666;
+                margin: .1rem 0;
+                .order-line-time-right {
+                    color: #f3b712;
+                    .yuan {
+                        font-size: .4rem;
+                    }
+                }
+            }
+            .order-list-bottom {
+                border-top: 1px solid #cccccc;
+                padding: .15rem 0;
+                .order-btn {
+                    p {
+                        margin-left: .3rem;
+                        border: 1px solid #666666;
+                        padding: .08rem .3rem;
+                        border-radius: .15rem;
+                    }
+                    .order-btn-payment {
+                        color: #262f81;
+                        border: 1px solid #262f81;
+                    }
+                }
+            }
+        }
+        .order-list:nth-child(2n+1) {
+            border-top: 0.05rem dashed #262f81;
+        }
+    }
+}
+
+// 订单评价
+.comment {
+    .comment-title {
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        background: #262f81;
+        font-size: .36rem;
+        padding: .35rem 0 1.1rem;
+    }
+    .comment-box {
+        width: 95%;
+        margin: -.75rem auto;
+        background: #ffffff;
+        border-radius: .1rem;
+        margin-bottom: 1.5rem;
+        .comment-box-detail {
+            padding: .35rem .15rem;
+            .comment-box-num {
+                .comment-box-num-left {
+                    color: #666666;
+                }
+            }
+            .com-name {
+                font-size: .34rem;
+                margin: .1rem 0;
+            }
+            .com-time {
+                color: #666666;
+            }
+            .weui-cell {
+                padding: .35rem .2rem !important;
+            }
+            .com-textarea {
+                margin-top: -.02rem;
+                position: relative;
+                z-index: 2;
+                textarea {
+                    width: 100%;
+                    outline: none;
+                    font-size: .32rem;
+                }
+            }
+            .photoList {
+                li {
+                    width: 30%;
+                    float: left;
+                    margin: 0 3% .16rem 0;
+                    position: relative;
+                    .addPhoto {
+                        width: 100%;
+                        height: 2rem;
+                    }
+                    input {
+                        width: 100%;
+                        height: 2rem;
+                    }
+                    i {
+                        position: absolute;
+                        color: #e4393c;
+                        font-weight: 600;
+                        font-size: .4rem;
+                        z-index: 99;
+                        right: 0;
+                        top: 0;
+                    }
+                }
+            }
+            .comment-box-photo {
+                margin: .3rem 0;
+                img {
+                    float: left;
+                    width: 1.5rem;
+                    margin-right: .25rem;
+                    margin-bottom: .3rem;
+                }
+            }
+        }
+    }
+    .comment-btn {
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #262f81;
+        padding: .35rem 0;
+    }
+    .weui-dialog {
+        .weui-dialog__ft {
+            .weui-dialog__btn_primary {
+                color: red !important;
+            }
+        }
+    }
+}
+
+// 订单详情
+.order-detail {
+    overflow: hidden;
+    .order-detail-title {
+        width: 100%; // height: 2.6rem;
+        background: #262f81;
+        padding: .1rem 0 .12rem;
+        .order-detail-t-box {
+            padding: 1%;
+            width: 97%;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: .1rem;
+            .order-detail-name {
+                font-size: .32rem;
+                border-bottom: 1px solid #e6e6e6;
+                padding: .25rem 0 .15rem;
+            }
+            .order-detail-title-bottom {
+                padding: .15rem 1%;
+                .or-bottom-name {
+                    color: #262f81;
+                    font-weight: 600;
+                    font-size: .32rem;
+                }
+                .or-bottom-price {
+                    color: #f3b712;
+                    font-size: .4rem;
+                } // 专列订单出发日期和时间
+                .or-bottom-train {
+                    color: #989898;
+                    span {
+                        color: #333333;
+                    }
+                }
+            }
+        }
+    }
+    .order-detail-userInfo {
+        margin-top: .2rem;
+        background: #ffffff;
+        .order-detail-news {
+            padding: .25rem .18rem .35rem .15rem;
+            border-bottom: 1px solid #e6e6e6;
+            .order-detail-news-left {
+                font-size: .38rem;
+                i {
+                    font-size: .5rem;
+                    color: #262f81;
+                    vertical-align: bottom;
+                }
+            }
+            .addUser {
+                color: #f3b712;
+                font-size: .6rem;
+            }
+        } // 专列 选择上中下铺
+        .train-order-chuyou {
+            padding: .18rem .43rem .18rem 0;
+            border-bottom: 1px solid #e5e5e5;
+            .chuyou-num {
+                width: 1.56rem;
+                text-align: right;
+                color: #999999;
+            }
+            .chuyou-name {
+                width: 3rem;
+                margin-left: .55rem;
+                span {
+                    color: #f3b712;
+                    font-size: .4rem;
+                    vertical-align: middle;
+                    margin-left: .05rem;
+                }
+            } // 专线 出游人信息 区别于专列
+            .line-order {
+                width: 2rem;
+                text-align: right;
+            }
+            .line-order-name {
+                margin-left: .43rem;
+            }
+            .three-choice {
+                div {
+                    width: .5rem;
+                    height: .5rem;
+                    text-align: center;
+                    line-height: .5rem;
+                    margin-right: .41rem;
+                }
+                .three-choice-down {
+                    margin-right: 0;
+                    color: #e4393c;
+                } // 选中样式
+                .active-t {
+                    background: #262f81;
+                    color: #ffffff;
+                    border: 1px solid #262f81;
+                } // 禁选样式
+                .dis-t {
+                    background: #ffffff;
+                    color: #cacaca;
+                    border: 1px solid #cacaca;
+                }
+            }
+        }
+        .order-detail-list {
+            .order-detail-padding-box {
+                padding: 0 .25rem;
+                border-bottom: 1px dashed #e6e6e6;
+                .order-up {
+                    padding: .25rem 0;
+                    .order-up-one {
+                        width: 2rem;
+                        text-align: right;
+                        font-size: .34rem;
+                    }
+                    .order-up-two {
+                        width: 4.2rem;
+                        margin-left: .3rem;
+                        font-size: .34rem;
+                        input {
+                            border: none;
+                            outline: none;
+                            font-size: .34rem;
+                            height: .6rem;
+                            line-height: .6rem;
+                            width: 4rem;
+                        }
+                    }
+                    .order-up-thr {
+                        font-size: .34rem;
+                        color: #262f81;
+                        text-align: right;
+                    }
+                    .order-up-left {
+                        width: 2rem;
+                        text-align: right;
+                        font-size: .34rem;
+                    }
+                    .order-up-right {
+                        font-size: .34rem;
+                    }
+                }
+                .border-b {
+                    border-bottom: 1px solid #e5e5e5;
+                }
+            } // 专列 选上下铺
+            .train-type {
+                padding: .28rem .28rem .25rem .4rem;
+                border-bottom: 1px solid #ded8d8;
+                li {
+                    width: 30%;
+                    float: left;
+                    text-align: center;
+                    margin: .15rem 3% .15rem 0;
+                    border: 1px solid #bfbdbd;
+                    color: #bfbdbd;
+                    padding: .08rem 0;
+                }
+                li:nth-child(3n) {
+                    margin-right: 0 !important;
+                }
+            } // 附加费新增
+            .extra-left {
+                width: 65%;
+                span {
+                    font-size: .32rem;
+                    color: #333333;
+                    font-weight: 600;
+                }
+                p {
+                    margin-top: .1rem;
+                    .extra-info {
+                        font-size: .28rem;
+                        color: #9a9a9a;
+                        vertical-align: bottom;
+                    }
+                    em {
+                        display: inline-block;
+                        width: 15px;
+                        height: 15px;
+                        text-align: center;
+                        line-height: 15px;
+                        background: #f6c557;
+                        color: #ffffff;
+                        border-radius: 50%;
+                        vertical-align: bottom;
+                        margin-right: 2px;
+                    }
+                }
+            }
+            .extra-sel {
+                text-align: right;
+                select {
+                    outline: none;
+                    border: none;
+                    background: #ffffff;
+                    font-size: .3rem;
+                    color: #f5c755;
+                }
+            }
+        }
+    } // 使用优惠券
+    .order-ticket {
+        background: #ffffff;
+        margin-top: .25rem;
+        padding: .25rem .18rem .35rem .35rem;
+        .order-ticket-go {
+            color: #f3b712;
+            i {
+                color: #333333;
+                vertical-align: middle;
+                font-size: .34rem;
+                font-weight: 600;
+            }
+        }
+    }
+    .order-footer {
+        padding: .32rem 0;
+        background: #262f81;
+        color: #ffffff;
+        font-size: .36rem;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    } // 专列提交订单按钮
+    .train-order-true {
+        margin: .3rem 0 0;
+        background: #ffffff;
+        height: 1.2rem;
+        line-height: 1.2rem;
+        .train-order-true-left {
+            width: 4.5rem;
+            .all {
+                width: 1.65rem;
+                text-align: center;
+            }
+            .price {
+                color: #f3b712;
+                font-size: .5rem;
+                .yuan {
+                    font-size: .3rem;
+                }
+            }
+            .order-icon {
+                margin-left: .25rem;
+                font-weight: 600;
+            }
+        }
+        .train-order-true-right {
+            background: #262f81;
+            color: #ffffff;
+            text-align: center;
+            font-size: .34rem;
+        }
+    } // 专线订单提交特殊处理
+}
+
+// 优惠券弹出
+.popup-cancel {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #262f81;
+    color: #ffffff;
+    padding: .25rem 0;
+    text-align: center;
+    font-size: .32rem;
+}
+
+//优惠券列表
+.myTicket-item {
+    padding: .3rem .1rem .3rem .1rem;
+    margin-bottom: .6rem;
+    .myTicket-list {
+        width: 100%;
+        height: 2rem;
+        margin-bottom: .3rem;
+        position: relative;
+        img {
+            width: 1.8rem;
+            position: absolute;
+            bottom: .35rem;
+            right: .45rem;
+        }
+        .myTicket-list-top {
+            margin: 0 .4rem 0 .8rem;
+            padding: .1rem 0 .05rem;
+            border-bottom: 1px solid #e5e5e5;
+            .myTicket-num {
+                color: #f3b712;
+                margin-right: .2rem;
+                width: 30%;
+                text-align: center;
+                .yuan {
+                    font-size: .8rem;
+                    font-weight: 600;
+                }
+            }
+            .myTicket-top-text {
+                .myTicket-name {
+                    font-size: .32rem;
+                }
+                .myTicket-time {
+                    color: #666666;
+                }
+            }
+        }
+        .myTicket-list-bottom {
+            margin: 0 .4rem .2rem .8rem;
+            padding: 0 0 .05rem;
+            .myTicket-sanjiao {
+                margin-right: .15rem;
+                width: .4rem;
+                text-align: center;
+                background: #f2b613;
+                font-size: .28rem;
+                height: .8rem;
+                color: #ffffff;
+            }
+        }
+    } //不同的背景色
+    .zhuangxian {
+        background: url('../../images/myTicket.png') no-repeat;
+        background-size: 100% 100%;
+    }
+}

@@ -1,0 +1,110 @@
+/* CSS Document */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }
+html{-webkit-text-size-adjust: 100%;}
+address, cite, dfn, em, var { font-style:normal; }
+ul, ol { list-style:none; }
+a { text-decoration:none;}
+a:hover { text-decoration:none; }
+sup { vertical-align:text-top; }
+sub{ vertical-align:text-bottom; }
+legend { color:#000; }
+fieldset, img { border:0; }
+table { border-collapse:collapse; border-spacing:0; }
+.clearfix:after {content: " ";display: block;clear: both;height: 0;}
+.clearfix {zoom: 1;}
+.left{float:left;}
+.right{float:right;}
+.border-box{-webkit-box-sizing:border-box;box-sizing:border-box;-o-box-sizing:border-box;}
+/* background-color: #e6e6e6; */
+html,body{width: 100%;min-height: 100%;font-family:"Helvetica";margin: 0 auto;background-color: #f0efef;}
+#app{min-height: 100%;}
+div,p{font-size: .3rem;}
+/*单行文本溢出省略*/
+.odd-ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+/*多行文本溢出省略*/
+.even-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:2;}
+/*3行文本溢出省略*/
+.three-ellipsis{display:-webkit-box !important;overflow:hidden;text-overflow:ellipsis;word-break:break-all;-webkit-box-orient:vertical;-webkit-line-clamp:3;}
+/*去除图片默认样式*/
+img{border:none;margin:0;padding:0;vertical-align:bottom;}
+/*去除表单默认样式*/
+/* input,textarea{-webkit-appearance:none;outline:none;border:none;} */
+.flex {display: -webkit-box;display: -webkit-flex;display: -ms-flexbox;display: flex;}
+.flex-1 {-webkit-box-flex: 1;-webkit-flex: 1;-ms-flex: 1;flex: 1;display: block;width: 0%;}
+.flex-align-center {-webkit-box-align: center;-webkit-align-items: center;-ms-flex-align: center;align-items: center;}
+.flex-align-bottom { -webkit-box-align: flex-end;-webkit-align-items: flex-end;-ms-flex-align: flex-end;align-items: flex-end;}
+.flex-align-top { -webkit-box-align: flex-start;-webkit-align-items: flex-start;-ms-flex-align: flex-start;align-items: flex-start;}
+.flex-pack-center{-webkit-box-pack: center;-webkit-justify-content: center;-ms-flex-pack: center;justify-content: center;}
+.flex-pack-justify{-webkit-box-pack: justify;-webkit-justify-content: space-between;-ms-flex-pack: justify;justify-content: space-between;}
+/* 改变mint-ui的公共样式 */
+.mint-header{background-color: #ffffff;color: #323232;-moz-box-shadow:10px 0px 20px #B0B0B0; -webkit-box-shadow:10px 0px 20px #B0B0B0; box-shadow:10px 0px 20px #B0B0B0;}
+.mintui{font-size:.36rem;}
+.mint-header-title{font-size:.36rem;}
+/* 改变vux公共样式 */
+.vux-header{padding: 0 !important;background-color: #ffffff !important;-moz-box-shadow:10px 0px 20px #B0B0B0; -webkit-box-shadow:10px 0px 20px #B0B0B0; box-shadow:10px 0px 20px #B0B0B0;}
+.vux-header-title{font-size:.38rem !important;color: #323232 !important;}
+.left-arrow{top:-8px !important;color: #323232 !important;}
+/* 改变mint 公共样式 */
+.mint-swipe { height: 3rem; }
+.mint-swipe  img{width: 100%;height: 100%;}
+
+/* 旅游攻略的头部样式 */
+.common-header{background: #ffffff;padding: .13rem .2rem .13rem .22rem;}
+.common-header-box{border: 1px solid #e6e6e6;height: .75rem;position: relative;}
+.common-header-gprs{font-size: .34rem;padding: .05rem .05rem;border-right:1px solid #e6e6e6;width: 1.3rem;text-align: center;color:#273080;}
+.common-header-gprs i{font-size: .32rem;margin-right: .1rem;}
+.common-header-ipt i{font-size: .7rem;vertical-align: middle;margin-left: .2rem;font-weight: 600;color: #999999;margin-top: -.1rem;display: inline-block;}
+.common-header-ipt input{border: none;outline: none;font-size: .34rem;padding-left:.15rem;width: 80%;}
+.common-header-box-small{width: 6.2rem;}
+.common-header-more{text-align: center;font-size: .3rem;}
+.common-header-more i{display: block;height: .3rem;}
+/* 线路列表的公共样式 */
+.com-line-box{padding: .1rem .2rem;background: #3a3f8c;margin-bottom: .3rem;}
+.com-line-box-ipt{width: 100%;background: #ffffff;padding: .1rem 0;text-align: center;position: relative;}
+.com-line-box-ipt i{font-size: .56rem;}
+.com-line-box-ipt input{height:.5rem;font-size: .32rem; border: none;outline: none;margin-top: .05rem;width: 2.7rem;line-height: .5rem;}
+.com-line-box-ipt span{position: absolute;right: .4rem;color: #666666;}
+/* border: none;outline: none; */
+/* 筛选的公共样式 */
+.com-order-box{background: #ffffff;width: 100%;position: relative;}
+.com-order-box ul{border-bottom: 1px solid #cccccc;padding: .1rem 0;width: 100%;z-index: 99;position: relative;background: #ffffff;}
+.com-order-box li{float: left;text-align: center;padding:.13rem 0;width: 49%;color:#666666;border-right: 1px solid #cccccc;}
+.com-order-box li:nth-child(2){border: none;}
+.com-order-box li div{font-size: .34rem;}
+.com-order-box li i{font-size: .26rem;margin-left: .15rem;vertical-align: middle;}
+.com-order-active{color:#3a3f8c !important;}
+.com-order-fixed{position: fixed;top:0;left:0;z-index: 99;}
+/* .com-order-fixed{position: sticky;position: -webkit-sticky;top:0rem;z-index: 99;} */
+/* 出发地 */
+.com-order-box-start{position: absolute;width:100%;z-index: 99;background: #ffffff;}
+.com-order-box-footer {margin-top: .2rem;}
+.com-order-box-footer div{width: 25%;text-align: center;padding: .25rem;}
+.com-order-box-footer .com-order-box-footer-btn{width: 50%;background: #3a3f8c;color: #ffffff;}
+/* 排序 */
+.com-order-box-start-order{padding: .18rem 0;border-bottom: 1px solid #f7f7f7;margin: 0 .2rem}
+.com-order-box-start-order .com-order-start-one{width: 50%;text-align: center;}
+.com-order-box-start-order .com-order-start-gou{width: 40%;text-align: right;}
+/* 返回顶部图标样式 */
+.top {width: 1rem;position: fixed;right: 0.2rem;bottom: 1.5rem;z-index: 97;}
+.top img{width: 100%;}
+/* 遮罩样式 */
+.mark{position: fixed;top:0;left:0;width: 100%;height: 100%;background:rgba(0, 0, 0, .5);}
+/* 暂无数据 */
+.noDate{font-size: .34rem;text-align: center;width: 100%;margin-top: 3rem;}
+/* 旅游攻略样式 后台返回修改 */
+.strategy-detail-talk img{width: 100% !important;height:auto !important;margin: .1rem 0 !important;}
+/* 宾馆详情 */
+.order-detail-item img{width: 100% !important;height:auto !important;margin: .1rem 0 !important;}
+/* 关于我们 */
+.about-con img{width: 100% !important;height:auto !important;margin: .1rem 0 !important;}
+/* 弹出选择字体大小 mint */
+.mint-msgbox-btn{font-size: .32rem;}
+/* 百度地图去掉默认样式 */
+#BMapLib_sendToPhone0 {display: none !important;}
+#BMapLib_search_bus_btn {display: none !important;}
+.anchorBL{display: none !important;}
+.gate-con-about-box img{
+    width: 98% !important;
+    margin: .15rem auto !important;
+    height: auto !important;
+}
